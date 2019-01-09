@@ -1,0 +1,110 @@
+.about {
+    width: 100%;
+    padding: 25vh;
+    background: url('../../assets/aboutBack2.jpg');
+    background-size: cover;
+    background-position: center
+}
+
+.aboutp {
+    font-size: 22px;
+    color: white;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    text-shadow: -3px 3px 2px black
+}
+
+.info {
+    font-size: 18px;
+    width: 90%;
+    margin: auto
+}
+
+
+.heading {
+    text-align: center;
+    color: white;
+    text-shadow: -3px 3px 2px black; /*12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29), 
+    12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29),
+    12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29),
+    12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29); */
+    font-family: 'Marcellus SC';
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 50px
+}
+
+.a {
+    padding-bottom: 5vh;
+    color: white;
+    text-decoration: none
+}
+
+.b {
+    margin-bottom: 10vh;
+    background: rgba(88, 87, 87, 0.8);
+    width: 100%;
+    padding: 10vh
+}
+
+.c {
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    background: rgba(88, 87, 87, 0.8);
+    width: 100%;
+    padding: 10vh
+}
+
+.services, .process {
+    display: flex;
+    justify-content: space-evenly
+}
+
+.process {
+    margin-top: 10vh
+}
+
+.design, .construction, .maintenance, .one, .two, .three {
+    width: 30%
+}
+
+h2 {
+    text-align: center;
+    color: rgb(144, 144, 144);
+    font-family: 'Anton';
+    font-weight: bold;
+    padding: 5vh 0;
+    font-size: 40px;
+    text-shadow: -2px 2px 2px black
+}
+
+.cover {
+    background: url('../../assets/aboutBack.png');
+    background-size: cover;
+    padding: 0 0 10vh 0;
+    background-position: right
+}
+
+p, ul {
+    font-family: 'Marcellus SC';
+    font-weight: bold;
+    list-style: none
+}
+
+li:before {
+    content: '';
+    height: 0.3vw;
+    width: 0.3vw;
+    transform: rotate(45deg);
+    background: black;
+    display: inline-block;
+    margin-right: 1vw;
+    margin-left: -2vw;
+    position: relative;
+    bottom: .2vw;
+}
+
+.red {
+    color: red
+}
