@@ -1,7 +1,7 @@
 .main {
     background: linear-gradient(148deg, rgba(0,0,0,1) 0%, #009551 50%, rgba(0,0,0,1) 100%);
     background-attachment: fixed;
-    min-height: 100vh;
+    height: 165vh;
     padding-top: 17vh
 }
 
@@ -221,7 +221,7 @@
 .hr {
     background: black;
     width: 50%;
-    margin: auto
+    margin: 0 auto
 }
 
 a {
@@ -270,8 +270,16 @@ a {
     background: white;
     height: 0;
     color: transparent;
-    transform: translateY(-10vh) translateX(-6.4vw);
-    transition: all 1s ease-in-out;
+    transform: translateX(-1.4vw);
+    transition: all .7s ease-in-out;
+}
+
+.dropbtn:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+    z-index: 200;
+    height: 800%;
+    transform: translateY(0.2%) translateX(-6.4vw)
 }
 
 .dropdown a {
@@ -291,13 +299,6 @@ a {
     background: rgb(253, 29, 29)
 }
 
-.dropbtn:hover .dropdown {
-    visibility: visible;
-    opacity: 1;
-    z-index: 200;
-    height: 800%;
-    transform: translateY(0.2%) translateX(-6.4vw);
-}
 
 .home, .dropbtn {
     color: black;

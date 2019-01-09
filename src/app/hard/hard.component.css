@@ -3,7 +3,7 @@
     background: url('../../assets/Hardscapes/hardBack.jpg');
     background-attachment: fixed;
     background-size: cover;
-    min-height: 180vh;
+    height: 200vh;
     padding-top: 7vh
 }
 
@@ -89,6 +89,7 @@ a {
     width: 11vw;
     margin-left: -5.5vw;
     background: white;
+    border-radius: 5%;
     position: fixed;
     z-index: 200;
     transition: 1s ease-in-out;

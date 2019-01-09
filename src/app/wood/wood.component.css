@@ -1,10 +1,8 @@
 .main {
-    /* background: linear-gradient(148deg, rgba(0,0,0,1) 0%, #8b6028 50%, rgba(0,0,0,1) 100%); */
     background: url('../../assets/Wood/background-board-brown-326311.jpg');
-    /* background: url('../../assets/Wood/woodBack.jpg'); */
     background-attachment: fixed;
     background-size: cover;
-    min-height: 160vh;
+    height: 175vh;
     padding-top: 7vh
 }
 

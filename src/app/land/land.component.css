@@ -1,10 +1,9 @@
 .main {
-    /* background: linear-gradient(148deg, rgba(0,0,0,1) 0%, #43a540 50%, rgba(0,0,0,1) 100%); */
     background: url('../../assets/Landscapes/landBack2.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    min-height: 220vh;
+    height: 220vh;
     padding-top: 7vh;
 }
 

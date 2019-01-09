@@ -1,9 +1,8 @@
 .main {
-    /* background: linear-gradient(148deg, rgba(0,0,0,1) 0%, #c7a64a 50%, rgba(0,0,0,1) 100%); */
     background: url('../../assets/Design/designBack.jpg');
     background-attachment: fixed;
     background-size: cover;
-    min-height: 180vh;
+    height: 190vh;
     padding-top: 7vh
 }
 

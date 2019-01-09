@@ -1,7 +1,7 @@
 .main {
     display: flex;
     width: 85%;
-    margin: auto auto 15vh auto;
+    margin: auto auto 30vh auto;
     justify-content: space-evenly
 }
 
