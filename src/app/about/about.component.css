@@ -26,10 +26,7 @@
 .heading {
     text-align: center;
     color: white;
-    text-shadow: -3px 3px 2px black; /*12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29), 
-    12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29),
-    12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29),
-    12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29); */
+    text-shadow: -3px 3px 2px black;
     font-family: 'Marcellus SC';
     font-weight: bold;
     text-decoration: underline;
@@ -117,8 +114,9 @@ li:before {
 
 .hr {
     background: black;
-    width: 50%;
-    margin: auto
+    width: 0%;
+    margin: auto;
+    transition: all .8s ease-in-out
 }
 
 a {
@@ -149,10 +147,25 @@ a {
     padding: 0 15vw;
 }
 
+.shadow {
+    width: 11.04vw;
+    height: 8.67vw;
+    background: white;
+    border-radius: 5%;
+    position: fixed;
+    z-index: 198;
+    box-shadow: 2px 2px 10px black, -2px 0px 10px black;
+    transition: 1s ease-in-out;
+    left: 50%;
+    margin-left: -5.52vw;
+    top: 0
+}
+
 .logo {
     width: 11vw;
     margin-left: -5.5vw;
     background: white;
+    border-radius: 5%;
     position: fixed;
     z-index: 200;
     transition: 1s ease-in-out;
@@ -167,16 +180,31 @@ a {
     opacity: 0;
     position: absolute;
     background: white;
-    height: 0;
+    height: 800%;
     color: transparent;
-    transform: translateY(-10vh) translateX(-6.4vw);
-    transition: all 1s ease-in-out;
+    transform: translateX(5vw);
+    transition: all .8s ease-in-out;
+}
+
+.dropbtn:hover a {
+    font-size: 20px
+}
+
+.dropbtn:hover .hr {
+    width: 50%
+}
+
+.dropbtn:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+    z-index: 200;
+    transform: translateY(0.2%) translateX(-6.4vw);
 }
 
 .dropdown a {
     padding: .5vw 2vw;
     color: black;
-    font-size: 20px;
+    font-size: 0px;
     transition: 1s;
     width: 100%;
     z-index: 300;
@@ -188,14 +216,6 @@ a {
     transform: scale(1.1);
     color: white;
     background: rgb(189, 189, 189)
-}
-
-.dropbtn:hover .dropdown {
-    visibility: visible;
-    opacity: 1;
-    z-index: 200;
-    height: 800%;
-    transform: translateY(0.2%) translateX(-6.4vw);
 }
 
 .home, .dropbtn {

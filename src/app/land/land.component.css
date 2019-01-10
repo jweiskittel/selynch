@@ -14,7 +14,7 @@
 
 p {
     color: white;
-    padding-left: 2vw;
+    padding-left: 5vw;
     font-family: 'Anton';
     line-height: 5vh;
     font-size: 22px;
@@ -23,7 +23,7 @@ p {
 
 ul {
     color: white;
-    padding-left: 3vw;
+    padding-left: 6vw;
     list-style: none;
     font-family: 'Anton';
     line-height: 6vh;
@@ -53,8 +53,9 @@ li:before {
 
 .hr {
     background: black;
-    width: 50%;
-    margin: auto
+    width: 0%;
+    margin: auto;
+    transition: all .8s ease-in-out
 }
 
 a {
@@ -81,10 +82,25 @@ a {
     padding: 0 15vw;
 }
 
+.shadow {
+    width: 11.04vw;
+    height: 8.67vw;
+    background: white;
+    border-radius: 5%;
+    position: fixed;
+    z-index: 198;
+    box-shadow: 2px 2px 10px black, -2px 0px 10px black;
+    transition: 1s ease-in-out;
+    left: 50%;
+    margin-left: -5.52vw;
+    top: 0
+}
+
 .logo {
     width: 11vw;
     margin-left: -5.5vw;
     background: white;
+    border-radius: 5%;
     position: fixed;
     z-index: 200;
     transition: 1s ease-in-out;
@@ -99,16 +115,31 @@ a {
     opacity: 0;
     position: absolute;
     background: white;
-    height: 0;
+    height: 800%;
     color: transparent;
-    transform: translateY(-10vh) translateX(-6.4vw);
-    transition: all 1s ease-in-out;
+    transform: translateX(5vw);
+    transition: all .8s ease-in-out;
+}
+
+.dropbtn:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+    z-index: 200;
+    transform: translateY(0.2%) translateX(-6.4vw);
+}
+
+.dropbtn:hover a {
+    font-size: 20px
+}
+
+.dropbtn:hover .hr {
+    width: 50%
 }
 
 .dropdown a {
     padding: .5vw 2vw;
     color: black;
-    font-size: 20px;
+    font-size: 0px;
     transition: 1s;
     width: 100%;
     z-index: 300;
@@ -122,13 +153,6 @@ a {
     background: rgb(33, 62, 65)
 }
 
-.dropbtn:hover .dropdown {
-    visibility: visible;
-    opacity: 1;
-    z-index: 200;
-    height: 800%;
-    transform: translateY(0.2%) translateX(-6.4vw);
-}
 
 .home, .dropbtn {
     color: black;
