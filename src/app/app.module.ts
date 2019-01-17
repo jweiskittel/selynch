@@ -14,6 +14,7 @@ import { HardComponent } from './hard/hard.component';
 import { WaterComponent } from './water/water.component';
 import { WoodComponent } from './wood/wood.component';
 import { AboutComponent } from './about/about.component';
+import { OwlModule } from 'ngx-owl-carousel';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { AboutComponent } from './about/about.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    OwlModule
   ],
   providers: [],
   bootstrap: [AppComponent]

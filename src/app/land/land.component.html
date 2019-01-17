@@ -1,27 +1,33 @@
 <a href='home'><img src='../assets/Logos/SE-Lynch-logo2.png' class='logo'></a>
 <div class='shadow'></div>
 <div class='navbar'>
-    <a href='home' class='home'>Home</a>
-    <a href='#' class='dropbtn'>
-        Services
-        <a class='dropdown'>
-            <a href='landscapes'>Landscapes</a>
-            <hr class='hr'>
-            <a href='hardscapes'>Hardscapes</a>
-            <hr class='hr'>
-            <a href='land-maintenance'>Landscape Maintenance</a>
-            <hr class='hr'>
-            <a href='land-design'>Landscape Design</a>
-            <hr class='hr'>
-            <a href='water-features'>Water Features</a>
-            <hr class='hr'>
-            <a href='wood-structures'>Wood Structures</a>
+    <div class="left">
+        <a href='home' class='navbtn'>Home</a>
+        <a class='dropbtn navbtn'>
+            Services
+            <a class='dropdown'>
+                <a href='landscapes'>Landscapes</a>
+                <hr class='hr'>
+                <a href='hardscapes'>Hardscapes</a>
+                <hr class='hr'>
+                <a href='land-maintenance'>Landscape Maintenance</a>
+                <hr class='hr'>
+                <a href='land-design'>Landscape Design</a>
+                <hr class='hr'>
+                <a href='water-features'>Water Features</a>
+                <hr class='hr'>
+                <a href='wood-structures'>Wood Structures</a>
+            </a>
         </a>
-    </a>
+    </div>
+    <div class="right">
+        <a href='about' class='navbtn'>About</a>
+        <a href='contact' class='navbtn'>Contact</a>
+    </div>
 </div>
 
 <div class='main'>
-    <img src='../../assets/Landscapes/Landscapes.png'>
+    <h1>Landscapes</h1>
     <p class='about'>S.E. Lynch Landscape Artistry is well-versed in the design and implementation of many different
       styles of softscape installation.
       With your overall look in mind, we can deliver a planting package that complements your existing landscape or
@@ -39,4 +45,29 @@
     </ul>
 
     <img src='../../assets/Landscapes/main.png' class='pic'>
+
+    <div *ngIf='carousel()'>
+        <owl-carousel [options]='options' [items]='images' [carouselClasses]="['owl-theme', 'sliding']">
+            <div class='item' *ngFor='let image of images'>
+                <div>
+                    <img src={{image}} class='owlimg'>
+                </div>
+            </div>
+        </owl-carousel>
+    </div>
 </div>
+
+<div class='footer'>
+        <!-- <div class='links'>
+            <a href='about'>About Us</a>
+            <a href='contact'>Contact Us</a>
+        </div> -->
+    
+        <img src='../assets/Logos/newFooter.png' class='footlogo'>
+    
+        <div class='footinfo'>
+            <span>&copy; 2018 S.E. Lynch Landscape Artistry</span> 
+            <span class='spacer'>|</span> 
+            <a class='link' href='https://jweiskittel.github.io'>Developed and Maintained by <img src='../assets/Logos/JWLogoBlack.png' class='jwlogo'> Development</a>
+        </div>
+    </div>

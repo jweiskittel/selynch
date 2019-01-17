@@ -15,13 +15,13 @@ export class ContactComponent implements OnInit {
     window.addEventListener('scroll', () => {
       if (window.scrollY >= 1) {
         shadow.style.height = '3.3vw';
-        shadow.style.width = '4.25vw';
-        shadow.style.marginLeft = '-2.125vw';
+        shadow.style.width = '4vw';
+        shadow.style.marginLeft = '-2vw';
         shadow.style.background = 'transparent';
         shadow.style.boxShadow = 'none';
-        img.style.width = '4.25vw';
+        img.style.width = '4vw';
         img.style.background = 'transparent';
-        img.style.marginLeft = '-2.125vw';
+        img.style.marginLeft = '-2vw';
       } else {
         shadow.style.height = '8.67vw';
         shadow.style.width = '11.04vw';

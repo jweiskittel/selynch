@@ -3,7 +3,7 @@
 <div class='navbar'>
     <div class="left">
         <a href='home' class='navbtn'>Home</a>
-        <a href='#' class='dropbtn navbtn'>
+        <a class='dropbtn navbtn'>
             Services
             <a class='dropdown'>
                 <a href='landscapes'>Landscapes</a>
@@ -21,28 +21,54 @@
         </a>
     </div>
     <div class="right">
-        <a href='about' class='navbtn'>About Us</a>
-        <a href='contact' class='navbtn'>Contact Us</a>
+        <a href='about' class='navbtn'>About</a>
+        <a href='contact' class='navbtn'>Contact</a>
     </div>
 </div>
 
 <div class='main'>
-    <!-- <img src='../../assets/Water/WaterFeaturesBlue.png'> -->
     <h1>Water Features</h1>
     <p class='about'>S.E. Lynch Landscape Artistry has been building custom water features from the company's
-      inception. Water in the landscape draws the visitor in for a closer look and becomes the focal point of the
-      entire setting.
-      We can design and install ponds, waterfalls, streams, and custom fountains for a one-of-a-kind experience of
-      outdoor enjoyment. Let S.E. Lynch Landscape Artistry make a splash in your landscape.
+        inception. Water in the landscape draws the visitor in for a closer look and becomes the focal point of the
+        entire setting.
+        We can design and install ponds, waterfalls, streams, and custom fountains for a one-of-a-kind experience of
+        outdoor enjoyment. Let S.E. Lynch Landscape Artistry make a splash in your landscape.
     </p>
     <p>Our water feature solutions may include:</p>
     <ul>
-      <li>Garden Ponds</li>
-      <li>Traditional and Pondless Waterfalls</li>
-      <li>Streams</li>
-      <li>Aquatic Plants and Fish</li>
-      <li>Architectural Fountains</li>
+        <li>Garden Ponds</li>
+        <li>Traditional and Pondless Waterfalls</li>
+        <li>Streams</li>
+        <li>Aquatic Plants and Fish</li>
+        <li>Architectural Fountains</li>
     </ul>
 
     <img src='../../assets/Water/main.png' class='pic'>
+
+    <div *ngIf='carousel()'>
+        <owl-carousel [options]='options' [items]='images' [carouselClasses]="['owl-theme', 'sliding']">
+            <div class='item' *ngFor='let image of images'>
+                <div>
+                    <img src={{image}} class='owlimg'>
+                </div>
+            </div>
+        </owl-carousel>
+    </div>
+</div>
+
+
+<div class='footer'>
+    <!-- <div class='links'>
+            <a href='about'>About Us</a>
+            <a href='contact'>Contact Us</a>
+        </div> -->
+
+    <img src='../assets/Logos/newFooter.png' class='footlogo'>
+
+    <div class='footinfo'>
+        <span>&copy; 2018 S.E. Lynch Landscape Artistry</span>
+        <span class='spacer'>|</span>
+        <a class='link' href='https://jweiskittel.github.io'>Developed and Maintained by <img src='../assets/Logos/JWLogoBlack.png'
+                class='jwlogo'> Development</a>
+    </div>
 </div>

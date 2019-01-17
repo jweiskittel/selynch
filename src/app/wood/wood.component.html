@@ -1,40 +1,72 @@
 <a href='home'><img src='../assets/Logos/SE-Lynch-logo2.png' class='logo'></a>
 <div class='shadow'></div>
 <div class='navbar'>
-    <a href='home' class='home'>Home</a>
-    <a href='#' class='dropbtn'>
-        Services
-        <a class='dropdown'>
-            <a href='landscapes'>Landscapes</a>
-            <hr class='hr'>
-            <a href='hardscapes'>Hardscapes</a>
-            <hr class='hr'>
-            <a href='land-maintenance'>Landscape Maintenance</a>
-            <hr class='hr'>
-            <a href='land-design'>Landscape Design</a>
-            <hr class='hr'>
-            <a href='water-features'>Water Features</a>
-            <hr class='hr'>
-            <a href='wood-structures'>Wood Structures</a>
+    <div class="left">
+        <a href='home' class='navbtn'>Home</a>
+        <a class='dropbtn navbtn'>
+            Services
+            <a class='dropdown'>
+                <a href='landscapes'>Landscapes</a>
+                <hr class='hr'>
+                <a href='hardscapes'>Hardscapes</a>
+                <hr class='hr'>
+                <a href='land-maintenance'>Landscape Maintenance</a>
+                <hr class='hr'>
+                <a href='land-design'>Landscape Design</a>
+                <hr class='hr'>
+                <a href='water-features'>Water Features</a>
+                <hr class='hr'>
+                <a href='wood-structures'>Wood Structures</a>
+            </a>
         </a>
-    </a>
+    </div>
+    <div class="right">
+        <a href='about' class='navbtn'>About</a>
+        <a href='contact' class='navbtn'>Contact</a>
+    </div>
 </div>
 
 <div class='main'>
-    <!-- <img src='../../assets/Wood/WoodBrown.png'> -->
     <h1>Wood Structures</h1>
     <p class='about'>S.E. Lynch Landscape Artistry can add the finishing touches to your outdoor living area or
-      planting with a custom wood structure. Whether an overhead pergola for added shade on your patio
-      is desired, or an arbor for entry to your perennial garden, we can add that special vertical element to make your
-      space even more unique.
+        planting with a custom wood structure. Whether an overhead pergola for added shade on your patio
+        is desired, or an arbor for entry to your perennial garden, we can add that special vertical element to make
+        your
+        space even more unique.
     </p>
     <p>Our wood accents may include:</p>
     <ul>
-      <li>Cedar Pergolas</li>
-      <li>Cedar Arbors</li>
-      <li>Cedar Trellises</li>
-      <li>Custom Screen Panels</li>
+        <li>Cedar Pergolas</li>
+        <li>Cedar Arbors</li>
+        <li>Cedar Trellises</li>
+        <li>Custom Screen Panels</li>
     </ul>
 
     <img src='../../assets/Wood/main.png' class='pic'>
+
+    <div *ngIf='carousel()'>
+        <owl-carousel [options]='options' [items]='images' [carouselClasses]="['owl-theme', 'sliding']">
+            <div class='item' *ngFor='let image of images'>
+                <div>
+                    <img src={{image}} class='owlimg'>
+                </div>
+            </div>
+        </owl-carousel>
+    </div>
+</div>
+
+<div class='footer'>
+    <!-- <div class='links'>
+            <a href='about'>About Us</a>
+            <a href='contact'>Contact Us</a>
+        </div> -->
+
+    <img src='../assets/Logos/newFooter.png' class='footlogo'>
+
+    <div class='footinfo'>
+        <span>&copy; 2018 S.E. Lynch Landscape Artistry</span>
+        <span class='spacer'>|</span>
+        <a class='link' href='https://jweiskittel.github.io'>Developed and Maintained by <img src='../assets/Logos/JWLogoBlack.png'
+                class='jwlogo'> Development</a>
+    </div>
 </div>

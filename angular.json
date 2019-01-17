@@ -23,9 +23,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/owl.carousel.css",
+              "src/owl.theme.default.min.css",
+              "src/animate.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/jquery.min.js",
+              "src/owl.carousel.min.js"
+            ]
           },
           "configurations": {
             "production": {
