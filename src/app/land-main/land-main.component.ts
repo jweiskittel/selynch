@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandMainComponent implements OnInit {
 
-  images = [];
+  images = [
+    '../../assets/Maintenance/pic1.png',
+    '../../assets/Maintenance/pic2.png',
+    '../../assets/Maintenance/pic3.png',
+    '../../assets/Maintenance/pic4.png'
+  ];
   options = {
     loop: true,
     nav: false,

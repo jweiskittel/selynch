@@ -3,7 +3,7 @@
 <div class='navbar'>
     <div class="navleft">
         <a href='home' class='navbtn'>Home</a>
-        <a href='#' class='dropbtn navbtn'>
+        <a class='dropbtn navbtn'>
             Services
             <a class='dropdown'>
                 <a href='landscapes'>Landscapes</a>
@@ -21,46 +21,131 @@
         </a>
     </div>
     <div class="navright">
-        <a href='about' class='navbtn'>About Us</a>
-        <a href='contact' class='navbtn'>Contact Us</a>
+        <a href='about' class='navbtn'>About</a>
+        <a href='contact' class='navbtn'>Contact</a>
     </div>
 </div>
 
-<div class='main'>
-  <div class='blast'>
-    <div class="left">
-      <img src='../../assets/home/homeLeft.png' class='homeLeft'>
-      <p id='passion'>Passion</p>
-      <p id='passiondef'><span class='def'>pas&middot;sion:</span> strong and barely controllable emotion</p>
-      <p id='creative'>Creativity</p>
-      <p id="creativedef"><span class='def'>cre&middot;a&middot;tiv&middot;i&middot;ty:</span> the use of the imagination or original ideas, especially in the production of an artistic work</p>
+<div *ngIf='display()'>
+    <div class='main'>
+        <div class='blast'>
+            <div class="left">
+                <img src='../../assets/home/homeLeft.png' class='homeLeft'>
+                <p id='passion'>Passion</p>
+                <p id='passiondef'><span class='def'>pas&middot;sion:</span> strong and barely controllable emotion</p>
+                <p id='creative'>Creativity</p>
+                <p id="creativedef"><span class='def'>cre&middot;a&middot;tiv&middot;i&middot;ty:</span> the use of the
+                    imagination or original ideas, especially in the production of an artistic work</p>
+            </div>
+            <div class="middle">
+                <img class='logo' src='../../assets/Logos/tablogo.png'>
+                <p class='slogan'>Your Canvas. Our Artistry.</p>
+            </div>
+            <div class="right">
+                <img src='../../assets//home/homeRight.png' class='homeRight'>
+                <p id='artistry'>Artistry</p>
+                <p id='artistrydef'><span class='def'>art&middot;ist&middot;ry:</span> creative skill or ability</p>
+                <p id="expression">Expression</p>
+                <p id="expressiondef"><span class='def'>ex&middot;pres&middot;sion:</span> the process of making known
+                    one's
+                    thoughts or feelings</p>
+            </div>
+        </div>
     </div>
-    <div class="middle">
-      <img class='logo' src='../../assets/Logos/tablogo.png'>
-      <p class='slogan'>Your Vision. Our Artistry.</p>
+</div>
+
+<div *ngIf='!display()'>
+    <div class="main">
+        <img src='../../assets/Logos/tablogo.png' class='wow slowest fadeIn delay-500ms logo'>
+        <p class="slogan wow slowest fadeIn delay-1s500ms">Your Canvas. Our Artistry.</p>
+        <div class="about wow slowest fadeIn">
+            <p>S.E. Lynch Landscape Artistry is an award-winning, design-build landscape organization
+                offering the very best in design, construction and maintenance. With our numerous years
+                of experience in the Indianapolis metropolitan area, we are able to maximize any landscape
+                need you desire. Our passion and enthusiasm for your project will allow for the best
+                possible solution for your property.</p>
+        </div>
+
+        <div>
+            <h1 class='wow slowest fadeIn'>Our Services</h1>
+
+            <div class='services'>
+                <a href='landscapes'><h2 class='wow slower fadeIn'>Landscapes</h2></a>
+                <a href='landscapes'><owl-carousel [options]='options' [items]='landimages' [carouselClasses]="['owl-theme', 'sliding']">
+                    <div class='item wow slower fadeIn' *ngFor='let image of landimages'>
+                        <div>
+                            <img src={{image}} class='owlimg'>
+                        </div>
+                    </div>
+                </owl-carousel></a>
+            </div>
+
+            <div class='services'>
+                <a href='hardscapes'><h2 class='wow slower fadeIn'>Hardscapes</h2></a>
+                <a href='hardscapes'><owl-carousel [options]='options' [items]='hardimages' [carouselClasses]="['owl-theme', 'sliding']">
+                    <div class='item wow slower fadeIn' *ngFor='let image of hardimages'>
+                        <div>
+                            <img src={{image}} class='owlimg'>
+                        </div>
+                    </div>
+                </owl-carousel></a>
+            </div>
+
+            <div class='services'>
+                <a href='land-maintenance'><h2 class='wow slower fadeIn'>Landscape Maintenance</h2></a>
+                <a href='land-maintenance'><owl-carousel [options]='options' [items]='maintenanceimages' [carouselClasses]="['owl-theme', 'sliding']">
+                    <div class='item wow slower fadeIn' *ngFor='let image of maintenanceimages'>
+                        <div>
+                            <img src={{image}} class='owlimg'>
+                        </div>
+                    </div>
+                </owl-carousel></a>
+            </div>
+
+            <div class='services'>
+                <a href='land-design'><h2 class='wow slower fadeIn'>Landscape Design</h2></a>
+                <a href='land-design'><owl-carousel [options]='options' [items]='designimages' [carouselClasses]="['owl-theme', 'sliding']">
+                    <div class='item wow slower fadeIn' *ngFor='let image of designimages'>
+                        <div>
+                            <img src={{image}} class='owlimg'>
+                        </div>
+                    </div>
+                </owl-carousel></a>
+            </div>
+
+            <div class='services'>
+                <a href='water-features'><h2 class='wow slower fadeIn'>Water Features</h2></a>
+                <a href='water-features'><owl-carousel [options]='options' [items]='waterimages' [carouselClasses]="['owl-theme', 'sliding']">
+                    <div class='item wow slower fadeIn' *ngFor='let image of waterimages'>
+                        <div>
+                            <img src={{image}} class='owlimg'>
+                        </div>
+                    </div>
+                </owl-carousel></a>
+            </div>
+
+            <div class='services'>
+                <a href='wood-structures'><h2 class='wow slower fadeIn'>Wood Structures</h2></a>
+                <a href='wood-structures'><owl-carousel [options]='options' [items]='woodimages' [carouselClasses]="['owl-theme', 'sliding']">
+                    <div class='item wow slower fadeIn' *ngFor='let image of woodimages'>
+                        <div>
+                            <img src={{image}} class='owlimg'>
+                        </div>
+                    </div>
+                </owl-carousel></a>
+            </div>
+
+        </div>
     </div>
-    <div class="right">
-      <img src='../../assets//home/homeRight.png' class='homeRight'>
-      <p id='artistry'>Artistry</p>
-      <p id='artistrydef'><span class='def'>art&middot;ist&middot;ry:</span> creative skill or ability</p>
-      <p id="expression">Expression</p>
-      <p id="expressiondef"><span class='def'>ex&middot;pres&middot;sion:</span> the process of making known one's
-        thoughts or feelings</p>
-    </div>
-  </div>
 </div>
 
 <div class='footer'>
-    <!-- <div class='links'>
-        <a href='about'>About Us</a>
-        <a href='contact'>Contact Us</a>
-    </div> -->
-
     <img src='../assets/Logos/newFooter.png' class='footlogo'>
 
     <div class='footinfo'>
-        <span>&copy; 2018 S.E. Lynch Landscape Artistry</span> 
-        <span class='spacer'>|</span> 
-        <a class='link' href='https://jweiskittel.github.io'>Developed and Maintained by <img src='../assets/Logos/JWLogoBlack.png' class='jwlogo'> Development</a>
+        <span>&copy; 2018 S.E. Lynch Landscape Artistry</span>
+        <span class='spacer'>|</span>
+        <a class='link' href='https://jweiskittel.github.io'>Developed and Maintained by <img src='../assets/Logos/JWLogoBlack.png'
+                class='jwlogo'> Development</a>
     </div>
 </div>

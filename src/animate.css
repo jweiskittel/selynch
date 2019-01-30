@@ -3568,9 +3568,19 @@
   animation-iteration-count: infinite;
 }
 
+.animated.delay-500ms {
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s
+}
+
 .animated.delay-1s {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
+}
+
+.animated.delay-1s500ms {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s
 }
 
 .animated.delay-2s {
@@ -3611,6 +3621,11 @@
 .animated.slower {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
+}
+
+.animated.slowest {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s
 }
 
 @media (prefers-reduced-motion) {

@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HardComponent implements OnInit {
 
-  images = [];
+  images = [
+    '../../assets/Hardscapes/pic1.png',
+    '../../assets/Hardscapes/pic2.png',
+    '../../assets/Hardscapes/pic3.png',
+    '../../assets/Hardscapes/pic4.png',
+    '../../assets/Hardscapes/pic5.png'
+  ];
   options = {
     loop: true,
     nav: false,

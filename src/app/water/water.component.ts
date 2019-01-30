@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WaterComponent implements OnInit {
 
-  images = ['../../assets/Water/pic1.png', '../../assets/Water/pic3.png', '../../assets/Water/pic4.png'];
+  images = [
+    '../../assets/Water/pic1.png',
+    '../../assets/Water/pic2.png',
+    '../../assets/Water/pic3.png',
+    '../../assets/Water/pic4.png',
+  ];
   options = {
     loop: true,
     nav: false,

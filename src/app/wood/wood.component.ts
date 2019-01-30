@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WoodComponent implements OnInit {
 
-  images = [];
+  images = [
+    '../../assets/Wood/pic1.png',
+    '../../assets/Wood/pic2.png',
+    '../../assets/Wood/pic3.png',
+    '../../assets/Wood/pic4.png',
+    '../../assets/Wood/pic5.png'
+  ];
   options = {
     loop: true,
     nav: false,

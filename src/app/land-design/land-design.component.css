@@ -2,7 +2,7 @@
     background: url('../../assets/Design/designBack.jpg');
     background-attachment: fixed;
     background-size: cover;
-    height: 190vh;
+    height: 200vh;
     padding-top: 7vh
 }
 
@@ -279,7 +279,7 @@ a {
     .main {
         background-size: cover;
         background-position-x: 15%;
-        height: 165vh
+        height: 175vh
     }
  
     h1 {
@@ -342,7 +342,7 @@ a {
  /* iPad */
  @media screen and (max-width: 768px) and (max-height: 1025px) {
      .main {
-         height: 180vh
+         height: 185vh
      }
  
      .navbtn {
@@ -371,7 +371,7 @@ a {
  /* iPhone 6/7/8 Plus */
  @media screen and (max-width: 415px) and (max-height: 737px) {
      .main {
-         height: 170vh
+         height: 180vh
      }
      .navbtn {
          font-size: 15px
@@ -441,7 +441,7 @@ a {
      }
      
      .main {
-         height: 175vh
+         height: 180vh
      }
  
      .navbar {
@@ -486,7 +486,7 @@ a {
      }
      
      .main {
-         height: 180vh
+         height: 185vh
      }
  
      .logo {
@@ -551,7 +551,7 @@ a {
      }
  
      .main {
-         height: 170vh
+         height: 175vh
      }
 
      .dropbtn:hover .dropdown {
