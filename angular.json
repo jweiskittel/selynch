@@ -29,8 +29,6 @@
               "src/animate.css"
             ],
             "scripts": [
-              "src/jquery.min.js",
-              "src/owl.carousel.min.js"
             ]
           },
           "configurations": {

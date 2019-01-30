@@ -510,6 +510,10 @@ a {
     .services {
         margin-bottom: 10vh
     }
+
+    .picture {
+        width: 100%
+    }
  }
  
  
