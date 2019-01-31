@@ -11,8 +11,7 @@ export class LandComponent implements OnInit {
     '../../assets/Landscapes/pic1.png',
     '../../assets/Landscapes/pic2.png',
     '../../assets/Landscapes/pic3.png',
-    '../../assets/Landscapes/pic4.png',
-    '../../assets/Landscapes/pic5.png'
+    '../../assets/Landscapes/pic4.png'
   ];
   options = {
     loop: true,

@@ -11,6 +11,7 @@ export class LandMainComponent implements OnInit {
     '../../assets/Maintenance/pic1.png',
     '../../assets/Maintenance/pic2.png',
     '../../assets/Maintenance/pic3.png',
+    '../../assets/Maintenance/pic5.png',
     '../../assets/Maintenance/pic4.png'
   ];
   options = {
