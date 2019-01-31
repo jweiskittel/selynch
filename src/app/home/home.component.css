@@ -617,6 +617,39 @@ a {
          height: 535vh
      }
  }
+
+
+ 
+ /* Galaxy Note 8 */
+ @media screen and (max-width: 361px) and (min-width: 359px) and (max-height: 741px) and (min-height: 739px) {
+     .navbtn {
+         font-size: 14px
+     }
+
+     .slogan {
+         font-size: 30px
+     }
+
+     .about {
+         font-size: 19px
+     }
+
+     h1 {
+         font-size: 42px
+     }
+
+     h2 {
+         font-size: 28px
+     }
+
+     .main {
+         height: 490vh
+     }
+
+     .footinfo {
+         font-size: 8px
+     }
+ }
  
  
  
@@ -859,34 +892,3 @@ a {
  }
 
 
-
- /* Galaxy Note 8 */
- @media screen and (max-width: 361px) and (min-width: 359px) and (max-height: 741px) and (min-height: 739px) {
-     .navbtn {
-         font-size: 14px
-     }
-
-     .slogan {
-         font-size: 30px
-     }
-
-     .about {
-         font-size: 19px
-     }
-
-     h1 {
-         font-size: 42px
-     }
-
-     h2 {
-         font-size: 28px
-     }
-
-     .main {
-         height: 490vh
-     }
-
-     .footinfo {
-         font-size: 8px
-     }
- }
