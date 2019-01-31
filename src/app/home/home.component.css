@@ -675,10 +675,9 @@ a {
      }
 
      .main {
-         height: 540vh;
          background-size: auto 100vh;
          background-repeat: no-repeat;
-         background-position: static
+         background-attachment: fixed
      }
 
      h1 {
