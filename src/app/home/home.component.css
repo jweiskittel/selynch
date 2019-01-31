@@ -643,7 +643,8 @@ a {
      }
 
      .main {
-         height: 490vh
+         height: 490vh;
+         background-size: auto
      }
 
      .footinfo {
