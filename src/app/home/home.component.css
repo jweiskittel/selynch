@@ -676,7 +676,8 @@ a {
 
      .main {
          height: 540vh;
-         background-size: 100vw 100vh;
+         background-size: auto 100vh;
+         background-position: center;
          background-repeat: no-repeat;
          background-attachment: fixed
      }
