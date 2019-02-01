@@ -676,13 +676,12 @@ a {
 
      .main {
          background: none;
-         position: absolute;
-         top: 0
      }
 
      .background {
          height: 100vh;
          width: auto;
+         overflow: hidden;
          position: sticky;
          top: 0;
          bottom: 0;
