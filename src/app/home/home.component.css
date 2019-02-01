@@ -675,21 +675,9 @@ a {
      }
 
      .main {
-         background: none;
-     }
-
-     .background {
-         height: 100vh;
-         width: auto;
-         overflow: hidden;
-         position: sticky;
-         top: 0;
-         bottom: 0;
-         z-index: -100
-     }
-
-     .logo {
-         margin: 0
+         background-size: auto 100vh;
+         background-repeat: no-repeat;
+         background-position: fixed
      }
 
      h1 {
