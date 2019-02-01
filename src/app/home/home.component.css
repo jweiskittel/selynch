@@ -675,9 +675,9 @@ a {
      }
 
      .main {
-         background-size: auto 100vh;
+         background-size: auto 120vh;
          background-repeat: no-repeat;
-         background-position: fixed
+         background-position: fixed;
      }
 
      h1 {
