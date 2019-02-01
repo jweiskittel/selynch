@@ -688,6 +688,10 @@ a {
          z-index: -100
      }
 
+     .logo {
+         margin: 0
+     }
+
      h1 {
          font-size: 42px
      }
