@@ -675,9 +675,15 @@ a {
      }
 
      .main {
-         background-size: auto 100vh;
-         background-repeat: no-repeat;
-         background-attachment: scroll
+         background: none
+     }
+
+     .background {
+         height: 100vh;
+         width: auto;
+         position: sticky;
+         top: 0;
+         z-index: -100
      }
 
      h1 {
