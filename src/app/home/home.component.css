@@ -675,7 +675,9 @@ a {
      }
 
      .main {
-         background: none
+         background: none;
+         position: absolute;
+         top: 0
      }
 
      .background {
@@ -683,6 +685,7 @@ a {
          width: auto;
          position: sticky;
          top: 0;
+         bottom: 0;
          z-index: -100
      }
 
