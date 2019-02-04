@@ -427,6 +427,47 @@ a {
 
 
 
+/* Larger Phones */
+@media screen and (max-width: 481px) and (max-height: 854px) {
+
+}
+
+
+
+/* Pixel 2 */
+@media screen and (max-width: 413px) and (max-height: 767px) {
+    ul {
+        margin-left: 10vw
+    }
+    
+    .main {
+        height: 170vh
+    }
+
+    .logo {
+        width: 13.5vw;
+        margin-left: -6.75vw
+    }
+
+    h1 {
+        font-size: 65px
+    }
+
+    .dropbtn:hover .dropdown {
+        transform: translateY(-0.5%) translateX(-36%);
+     }
+
+     .dropbtn:hover a {
+        font-size: 16px
+     }
+
+     .dropbtn:hover .hr {
+        width: 35%
+     }
+}
+
+
+
 /* Pixel 2 XL */
 @media screen and (max-width: 412px) and (max-height: 824px) {
     ul {
@@ -473,37 +514,6 @@ a {
 
 
 
-/* Pixel 2 */
-@media screen and (max-width: 412px) and (max-height: 732px) {
-    ul {
-        margin-left: 10vw
-    }
-    
-    .main {
-        height: 170vh
-    }
-
-    .logo {
-        width: 13.5vw;
-        margin-left: -6.75vw
-    }
-
-    h1 {
-        font-size: 65px
-    }
-
-    .dropbtn:hover .dropdown {
-        transform: translateY(-0.5%) translateX(-36%);
-     }
-
-     .dropbtn:hover a {
-        font-size: 16px
-     }
-
-     .dropbtn:hover .hr {
-        width: 35%
-     }
-}
 
 
 
