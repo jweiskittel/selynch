@@ -675,7 +675,7 @@ a {
      }
 
      .main {
-         height: auto;
+         height: 100%;
         background: rgb(143, 8, 8)
      }
 
