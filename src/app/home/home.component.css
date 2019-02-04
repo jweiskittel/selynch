@@ -653,6 +653,41 @@ a {
      }
  } */
 
+ @media screen and (max-width: 481px) and (max-height: 854px) {
+    .navbtn {
+        font-size: 14px
+    }
+    
+    .footinfo {
+        font-size: 8px
+    }
+
+    .logo2 {
+        width: 13vw;
+        margin-left: -6.5vw
+    }
+
+    .slogan {
+        font-size: 30px
+    }
+
+    .about {
+        font-size: 18px
+    }
+
+    h1 {
+        font-size: 38px
+    }
+
+    h2 {
+        font-size: 28px
+    }
+
+    .main {
+        height: 530vh
+    }
+ }
+
 
 
  /* Pixel 2 */
