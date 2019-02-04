@@ -43,14 +43,6 @@ export class HomeComponent implements OnInit {
         }
       });
     }
-
-    if (window.innerWidth < 1024) {
-      window.addEventListener('scroll', () => {
-        const background: HTMLElement = document.getElementsByClassName('main')[0] as HTMLElement;
-        const scrollY = window.scrollY;
-        background.style.backgroundPosition = `left ${scrollY - 20}px`;
-      });
-    }
   }
 
 }

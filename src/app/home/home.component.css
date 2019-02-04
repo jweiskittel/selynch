@@ -614,7 +614,7 @@ a {
      }
 
      .main {
-         height: 535vh
+         height: 535vh;
      }
  }
 
@@ -675,9 +675,7 @@ a {
      }
 
      .main {
-         background-size: auto 150vh;
-         background-repeat: no-repeat;
-         background-position: left -10vh;
+        background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(172,8,8,1) 50%, rgba(0,0,0,1) 100%)
      }
 
      h1 {
