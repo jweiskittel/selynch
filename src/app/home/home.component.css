@@ -675,7 +675,7 @@ a {
      }
 
      .main {
-        background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(172,8,8,1) 50%, rgba(0,0,0,1) 100%)
+        background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgb(143, 8, 8) 50%, rgba(0,0,0,1) 100%)
      }
 
      h1 {
