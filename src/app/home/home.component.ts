@@ -59,6 +59,14 @@ export class HomeComponent implements OnInit {
         }
       });
     }
+
+    window.addEventListener('click', () => {
+      const dropdown: HTMLElement = document.getElementsByClassName('dropdown')[0] as HTMLElement;
+      if (dropdown.style.visibility = 'visible') {
+        dropdown.style.visibility = 'hidden';
+        dropdown.style.opacity = '0';
+      }
+    });
   }
 
 }
