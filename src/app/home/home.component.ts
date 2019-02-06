@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -33,6 +33,12 @@ export class HomeComponent implements OnInit {
     dropdown.style.transform = 'translateY(0.2%) translateX(-36%)';
   }
 
+  menu2 = () => {
+    const dropdown: HTMLElement = document.getElementsByClassName('dropdown')[0] as HTMLElement;
+    dropdown.style.visibility = 'hidden';
+    dropdown.style.opacity = '0';
+  }
+
   ngOnInit() {
     if (window.innerWidth > 1024) {
       window.addEventListener('scroll', () => {
@@ -59,14 +65,6 @@ export class HomeComponent implements OnInit {
         }
       });
     }
-
-    window.addEventListener('click', () => {
-      const dropdown: HTMLElement = document.getElementsByClassName('dropdown')[0] as HTMLElement;
-      if (dropdown.style.visibility = 'visible') {
-        dropdown.style.visibility = 'hidden';
-        dropdown.style.opacity = '0';
-      }
-    });
   }
 
 }
