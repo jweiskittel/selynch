@@ -23,6 +23,15 @@ export class HardComponent implements OnInit {
     animateIn: 'fadeIn slow',
     animateOut: 'fadeOut slow'
   };
+
+  navbar = () => {
+    if (window.innerWidth > 1024) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   carousel = () => {
     if (window.innerWidth <= 1024) {
       return true;

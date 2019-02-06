@@ -311,8 +311,9 @@ a {
         bottom: .5vw;
      }
  
-     .navbar {
-         height: 6vh
+     .moblogo {
+         height: 6vh;
+         margin-bottom: 0.5vh
      }
  
      .navbtn {
@@ -377,10 +378,6 @@ a {
          font-size: 15px
      }
      
-     .navbar {
-         height: 5vh
-     }
-     
      h1 {
          font-size: 50px
      }
@@ -442,10 +439,6 @@ a {
      
      .main {
          height: 180vh
-     }
- 
-     .navbar {
-         height: 6vh
      }
  
      .navbtn {
@@ -535,10 +528,6 @@ a {
  
      .navbtn {
          font-size: 15px
-     }
- 
-     .navbar {
-         height: 5vh
      }
  
      .logo {

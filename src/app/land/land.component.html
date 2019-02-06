@@ -1,9 +1,37 @@
-<a href='home'><img src='../assets/Logos/SE-Lynch-logo2.png' class='logo'></a>
-<div class='shadow'></div>
-<div class='navbar'>
-    <div class="left">
+<section *ngIf='navbar()'>
+    <a href='home'><img src='../assets/Logos/SE-Lynch-logo2.png' class='logo'></a>
+    <div class='shadow'></div>
+    <div class='navbar'>
+        <div class="left">
+            <a href='home' class='navbtn'>Home</a>
+            <a class='dropbtn navbtn'>
+                Services
+                <a class='dropdown'>
+                    <a href='landscapes'>Landscapes</a>
+                    <hr class='hr'>
+                    <a href='hardscapes'>Hardscapes</a>
+                    <hr class='hr'>
+                    <a href='land-maintenance'>Landscape Maintenance</a>
+                    <hr class='hr'>
+                    <a href='land-design'>Landscape Design</a>
+                    <hr class='hr'>
+                    <a href='water-features'>Water Features</a>
+                    <hr class='hr'>
+                    <a href='wood-structures'>Wood Structures</a>
+                </a>
+            </a>
+        </div>
+        <div class="right">
+            <a href='about' class='navbtn'>About</a>
+            <a href='contact' class='navbtn'>Contact</a>
+        </div>
+    </div>
+</section>
+
+<div *ngIf='!navbar()'>
+    <div class='navbar'>
         <a href='home' class='navbtn'>Home</a>
-        <a class='dropbtn navbtn'>
+        <a class='navbtn dropbtn'>
             Services
             <a class='dropdown'>
                 <a href='landscapes'>Landscapes</a>
@@ -19,8 +47,7 @@
                 <a href='wood-structures'>Wood Structures</a>
             </a>
         </a>
-    </div>
-    <div class="right">
+        <a href='home'><img src='../../assets/Logos/SE-Lynch-logo2.png' class='moblogo'></a>
         <a href='about' class='navbtn'>About</a>
         <a href='contact' class='navbtn'>Contact</a>
     </div>
@@ -29,19 +56,19 @@
 <div class='main'>
     <h1>Landscapes</h1>
     <p class='about'>S.E. Lynch Landscape Artistry is well-versed in the design and implementation of many different
-      styles of softscape installation.
-      With your overall look in mind, we can deliver a planting package that complements your existing landscape or
-      gives you a fresh new look.
+        styles of softscape installation.
+        With your overall look in mind, we can deliver a planting package that complements your existing landscape or
+        gives you a fresh new look.
     </p>
     <p>Our softscape solutions may include:</p>
     <ul>
-      <li>Foundation Plantings</li>
-      <li>Rock Gardens</li>
-      <li>Perennial Beds</li>
-      <li>Privacy and Screen Plantings</li>
-      <li>Mounded Planting Islands</li>
-      <li>Shade and Ornamental Tree Plantings</li>
-      <li>Patio and Deck Accent Plantings</li>
+        <li>Foundation Plantings</li>
+        <li>Rock Gardens</li>
+        <li>Perennial Beds</li>
+        <li>Privacy and Screen Plantings</li>
+        <li>Mounded Planting Islands</li>
+        <li>Shade and Ornamental Tree Plantings</li>
+        <li>Patio and Deck Accent Plantings</li>
     </ul>
 
     <img src='../../assets/Landscapes/main.png' class='pic'>
@@ -58,16 +85,17 @@
 </div>
 
 <div class='footer'>
-        <!-- <div class='links'>
+    <!-- <div class='links'>
             <a href='about'>About Us</a>
             <a href='contact'>Contact Us</a>
         </div> -->
-    
-        <img src='../assets/Logos/newFooter.png' class='footlogo'>
-    
-        <div class='footinfo'>
-            <span>&copy; 2018 S.E. Lynch Landscape Artistry</span> 
-            <span class='spacer'>|</span> 
-            <a class='link' href='https://jweiskittel.github.io'>Developed and Maintained by <img src='../assets/Logos/JWLogoBlack.png' class='jwlogo'> Development</a>
-        </div>
+
+    <img src='../assets/Logos/newFooter.png' class='footlogo'>
+
+    <div class='footinfo'>
+        <span>&copy; 2018 S.E. Lynch Landscape Artistry</span>
+        <span class='spacer'>|</span>
+        <a class='link' href='https://jweiskittel.github.io'>Developed and Maintained by <img src='../assets/Logos/JWLogoBlack.png'
+                class='jwlogo'> Development</a>
     </div>
+</div>

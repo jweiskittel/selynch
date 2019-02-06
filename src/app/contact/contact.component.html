@@ -1,29 +1,56 @@
-<a href='home'><img src='../assets/Logos/SE-Lynch-logo2.png' class='logo'></a>
-<div class='shadow'></div>
-<div class='navbar'>
+<section *ngIf='navbar()'>
+  <a href='home'><img src='../assets/Logos/SE-Lynch-logo2.png' class='logo'></a>
+  <div class='shadow'></div>
+  <div class='navbar'>
     <div class="left">
-        <a href='home' class='navbtn'>Home</a>
-        <a class='dropbtn navbtn'>
-            Services
-            <a class='dropdown'>
-                <a href='landscapes'>Landscapes</a>
-                <hr class='hr'>
-                <a href='hardscapes'>Hardscapes</a>
-                <hr class='hr'>
-                <a href='land-maintenance'>Landscape Maintenance</a>
-                <hr class='hr'>
-                <a href='land-design'>Landscape Design</a>
-                <hr class='hr'>
-                <a href='water-features'>Water Features</a>
-                <hr class='hr'>
-                <a href='wood-structures'>Wood Structures</a>
-            </a>
+      <a href='home' class='navbtn'>Home</a>
+      <a class='dropbtn navbtn'>
+        Services
+        <a class='dropdown'>
+          <a href='landscapes'>Landscapes</a>
+          <hr class='hr'>
+          <a href='hardscapes'>Hardscapes</a>
+          <hr class='hr'>
+          <a href='land-maintenance'>Landscape Maintenance</a>
+          <hr class='hr'>
+          <a href='land-design'>Landscape Design</a>
+          <hr class='hr'>
+          <a href='water-features'>Water Features</a>
+          <hr class='hr'>
+          <a href='wood-structures'>Wood Structures</a>
         </a>
+      </a>
     </div>
     <div class="right">
-        <a href='about' class='navbtn'>About</a>
-        <a href='contact' class='navbtn'>Contact</a>
+      <a href='about' class='navbtn'>About</a>
+      <a href='contact' class='navbtn'>Contact</a>
     </div>
+  </div>
+</section>
+
+<div *ngIf='!navbar()'>
+  <div class='navbar'>
+    <a href='home' class='navbtn'>Home</a>
+    <a class='navbtn dropbtn'>
+      Services
+      <a class='dropdown'>
+        <a href='landscapes'>Landscapes</a>
+        <hr class='hr'>
+        <a href='hardscapes'>Hardscapes</a>
+        <hr class='hr'>
+        <a href='land-maintenance'>Landscape Maintenance</a>
+        <hr class='hr'>
+        <a href='land-design'>Landscape Design</a>
+        <hr class='hr'>
+        <a href='water-features'>Water Features</a>
+        <hr class='hr'>
+        <a href='wood-structures'>Wood Structures</a>
+      </a>
+    </a>
+    <a href='home'><img src='../../assets/Logos/SE-Lynch-logo2.png' class='moblogo'></a>
+    <a href='about' class='navbtn'>About</a>
+    <a href='contact' class='navbtn'>Contact</a>
+  </div>
 </div>
 
 <div class="heading">
@@ -68,7 +95,9 @@
   <div class="info">
     <a href='mailto:sales@selynch.com'><i class="far fa-envelope"></i></a>
     <h2>Email</h2>
-    <a href='mailto:sales@selynch.com'><p class='email'>sales@selynch.com</p></a>
+    <a href='mailto:sales@selynch.com'>
+      <p class='email'>sales@selynch.com</p>
+    </a>
     <hr>
     <i class="fas fa-phone phone"></i>
     <h2>Phone</h2>
@@ -85,16 +114,17 @@
 </div>
 
 <div class='footer'>
-    <!-- <div class='links'>
+  <!-- <div class='links'>
         <a href='about'>About Us</a>
         <a href='contact'>Contact Us</a>
     </div> -->
 
-    <img src='../assets/Logos/newFooter.png' class='footlogo'>
+  <img src='../assets/Logos/newFooter.png' class='footlogo'>
 
-    <div class='footinfo'>
-        <span>&copy; 2018 S.E. Lynch Landscape Artistry</span> 
-        <span class='spacer'>|</span> 
-        <a class='link' href='https://jweiskittel.github.io'>Developed and Maintained by <img src='../assets/Logos/JWLogoBlack.png' class='jwlogo'> Development</a>
-    </div>
+  <div class='footinfo'>
+    <span>&copy; 2018 S.E. Lynch Landscape Artistry</span>
+    <span class='spacer'>|</span>
+    <a class='link' href='https://jweiskittel.github.io'>Developed and Maintained by <img src='../assets/Logos/JWLogoBlack.png'
+        class='jwlogo'> Development</a>
+  </div>
 </div>

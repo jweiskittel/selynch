@@ -269,7 +269,7 @@ a {
    }
 
    .moblogo {
-       height: 5vh;
+       height: 6vh;
        margin-bottom: 0.5vh
    }
 
@@ -312,11 +312,6 @@ a {
        height: 1vw;
        width: 1vw;
        bottom: .5vw;
-    }
-
-    .navbar {
-        height: 6vh;
-        line-height: 6vh
     }
 
     .navbtn {

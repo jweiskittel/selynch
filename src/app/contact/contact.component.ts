@@ -7,13 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  navbar = () => {
+    if (window.innerWidth > 1024) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   constructor() { }
 
   ngOnInit() {
     if (window.innerWidth > 1024) {
-      const shadow = document.querySelector('div');
-      const img = document.querySelector('img');
       window.addEventListener('scroll', () => {
+        const shadow = document.querySelector('div');
+        const img = document.querySelector('img');
         if (window.scrollY >= 1) {
           shadow.style.height = '3.3vw';
           shadow.style.width = '4vw';

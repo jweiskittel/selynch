@@ -327,9 +327,10 @@ a {
         background: transparent;
         margin-left: -5vw
     }
- 
-     .navbar {
-         height: 6vh
+
+     .moblogo {
+         height: 6vh;
+         margin-bottom: 0.5vh
      }
  
      .navbtn {
@@ -408,10 +409,6 @@ a {
  @media screen and (max-width: 415px) and (max-height: 737px) {
      .navbtn {
          font-size: 15px
-     }
-     
-     .navbar {
-         height: 5vh
      }
 
      .footinfo {
@@ -495,10 +492,6 @@ a {
  
  /* Pixel 2 XL */
  @media screen and (max-width: 412px) and (max-height: 824px) {
-     .navbar {
-         height: 6vh
-     }
- 
      .navbtn {
          font-size: 17px
      }
@@ -588,10 +581,6 @@ a {
  @media screen and (max-width: 376px) and (max-height: 813px) and (min-height: 812px) {
      .navbtn {
          font-size: 15px
-     }
- 
-     .navbar {
-         height: 5vh
      }
  
      .logo {
