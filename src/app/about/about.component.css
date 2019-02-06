@@ -322,12 +322,6 @@ a {
 
 /* iPad Pro  */
 @media screen and (max-width: 1024px) and (max-height: 1367px) {
-    .logo {
-        width: 10vw;
-        background: transparent;
-        margin-left: -5vw
-    }
-
      .moblogo {
          height: 6vh;
          margin-bottom: 0.5vh
@@ -394,7 +388,7 @@ a {
      }
 
      .about {
-         height: 100vh;
+         height: 101vh;
          padding: 18vh 0 0 0
      }
 
@@ -405,6 +399,67 @@ a {
  
  
  
+ /* Larger Phones */
+
+ @media screen and (max-width: 481px) and (max-height: 854px) {
+    .navbtn {
+        font-size: 18px
+    }
+
+    .aboutp {
+        font-size: 22px;
+        width: 80%
+    }
+
+    .services, .process {
+        flex-direction: column
+    }
+
+    .design, .construction, .maintenance, .one, .two, .three {
+        width: 90%;
+        margin: auto
+    }
+
+    .b {
+        font-size: 50px
+    }
+
+    .top {
+        font-size: 40px
+    }
+
+    .bottom {
+        font-size: 30px
+    }
+
+    .info {
+        font-size: 20px
+    }
+    
+    .footinfo {
+        font-size: 10px
+    }
+
+    li:before {
+        height: 1vw;
+        width: 1vw;
+        transform: rotate(45deg);
+        background: black;
+        margin-right: 2vw;
+        margin-left: -3vw;
+        bottom: 1vw;
+    }
+
+    .divide {
+        visibility: visible;
+        background: black;
+        width: 25%;
+        margin: 7vh auto 2vh auto;
+    }
+ }
+
+
+
  /* iPhone 6/7/8 Plus */
  @media screen and (max-width: 415px) and (max-height: 737px) {
      .navbtn {
@@ -417,11 +472,6 @@ a {
      
      .footer {
          padding-top: 1.3vh
-     }
-     
-     .logo {
-         width: 11vw;
-         margin-left: -5.5vw
      }
  
      .dropbtn:hover .dropdown {
@@ -457,48 +507,70 @@ a {
          font-size: 40px
      }
 
-     .services, .process {
-         flex-direction: column
-     }
-
-     .design, .construction, .maintenance, .one, .two, .three {
-        width: 90%;
-        margin: auto
-    }
-
-    .divide {
-        visibility: visible;
-        background: black;
-        width: 25%;
-        margin: 7vh auto 2vh auto;
-    }
-
     .c {
         font-size: 35px
     }
 
-    li:before {
-        height: 1vw;
-        width: 1vw;
-        transform: rotate(45deg);
-        background: black;
-        margin-right: 2vw;
-        margin-left: -3vw;
-        bottom: 1vw;
+    .info {
+        font-size: 17px
     }
  }
+
  
  
- 
- /* Pixel 2 XL */
- @media screen and (max-width: 412px) and (max-height: 824px) {
+ /* Pixel 2 */
+ @media screen and (max-width: 413px) and (max-height: 767px) {
      .navbtn {
-         font-size: 17px
+         font-size: 16px
      }
  
-     .logo {
-         width: 15vw;
-         margin-left: -7.5vw
+     .dropbtn:hover .dropdown {
+         transform: translateY(-0.5%) translateX(-36%);
+      }
+ 
+      .dropbtn:hover a {
+         font-size: 16px
+      }
+ 
+      .dropbtn:hover .hr {
+         width: 35%
+      }
+
+      .a {
+          font-size: 50px
+      }
+
+      .aboutp {
+          font-size: 21px
+      }
+
+      .b {
+          font-size: 40px
+      }
+
+      .info {
+          font-size: 18px
+      }
+
+      .c {
+          font-size: 40px
+      }
+
+      .bottom {
+          font-size: 32px
+      }
+
+      .footinfo {
+          font-size: 9px
+      }
+ }
+
+
+
+ /* Pixel 2 XL */
+ @media screen and (max-width: 412px) and (min-height: 768px) and (max-height: 824px) {
+     .navbtn {
+         font-size: 17px
      }
  
      .footinfo {
@@ -555,25 +627,6 @@ a {
  
  
  
- /* Pixel 2 */
- @media screen and (max-width: 412px) and (max-height: 732px) {
-     .logo {
-         width: 13.5vw;
-         margin-left: -6.75vw
-     }
- 
-     .dropbtn:hover .dropdown {
-         transform: translateY(-0.5%) translateX(-36%);
-      }
- 
-      .dropbtn:hover a {
-         font-size: 16px
-      }
- 
-      .dropbtn:hover .hr {
-         width: 35%
-      }
- }
  
  
  
@@ -581,11 +634,6 @@ a {
  @media screen and (max-width: 376px) and (max-height: 813px) and (min-height: 812px) {
      .navbtn {
          font-size: 15px
-     }
- 
-     .logo {
-         width: 13vw;
-         margin-left: -6.5vw
      }
  
      .footinfo {
@@ -606,6 +654,10 @@ a {
      
      .dropdown {
          height: 1000%
+     }
+
+     .info {
+         font-size: 18px
      }
  }
  
@@ -635,6 +687,14 @@ a {
      .info {
          font-size: 16px
      }
+
+     .top {
+         font-size: 32px
+     }
+
+     .bottom {
+         font-size: 28px
+     }
  }
  
  
@@ -648,11 +708,6 @@ a {
      .footinfo {
          font-size: 8px
      }
- 
-     .logo {
-         width: 13vw;
-         margin-left: -6.5vw
-     }
 
      .a {
         font-size: 40px
@@ -663,7 +718,7 @@ a {
     }
 
     .info {
-        font-size: 16px
+        font-size: 15px
     }
 
     .b {
@@ -674,8 +729,12 @@ a {
         font-size: 33px
     }
 
-    h2 {
-        font-size: 35px
+    .top {
+        font-size: 32px
+    }
+
+    .bottom {
+        font-size: 27px
     }
  }
  
@@ -685,11 +744,6 @@ a {
  @media screen and (max-width: 321px) and (max-height: 569px) {
      .navbtn {
          font-size: 12px
-     }
- 
-     .logo {
-         width: 13.5vw;
-         margin-left: -6.25vw
      }
  
      .footinfo {
@@ -710,14 +764,18 @@ a {
     }
 
     .b {
-        font-size: 35px
+        font-size: 32px
     }
 
     .c {
         font-size: 32px
     }
 
-    h2 {
-        font-size: 32px
+    .top {
+        font-size: 30px
+    }
+
+    .bottom {
+        font-size: 25px
     }
  }
