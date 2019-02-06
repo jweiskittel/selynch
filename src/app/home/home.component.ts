@@ -25,6 +25,14 @@ export class HomeComponent implements OnInit {
     }
   }
 
+  menu = () => {
+    const dropdown: HTMLElement = document.getElementsByClassName('dropdown')[0] as HTMLElement;
+    dropdown.style.visibility = 'visible';
+    dropdown.style.opacity = '1';
+    dropdown.style.zIndex = '200';
+    dropdown.style.transform = 'translateY(0.2%) translateX(-36%)';
+  }
+
   ngOnInit() {
     if (window.innerWidth > 1024) {
       window.addEventListener('scroll', () => {
