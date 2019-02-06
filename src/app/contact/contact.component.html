@@ -31,7 +31,7 @@
 <div *ngIf='!navbar()'>
   <div class='navbar'>
     <a href='home' class='navbtn'>Home</a>
-    <a class='navbtn dropbtn'>
+    <a class='navbtn dropbtn' (click)='menu()'>
       Services
       <a class='dropdown'>
         <a href='landscapes'>Landscapes</a>
@@ -53,12 +53,12 @@
   </div>
 </div>
 
-<div class="heading">
+<div class="heading" (click)='nomenu()'>
   <h1>Contact Us</h1>
   <p>Feel free to email or call us anytime, or complete the form below to send us a message!</p>
 </div>
 
-<div class="main">
+<div class="main" (click)='nomenu()'>
   <div class='form'>
     <form action="https://formspree.io/sales@selynch.com" method="POST">
       <div class="control-group">
@@ -114,11 +114,6 @@
 </div>
 
 <div class='footer'>
-  <!-- <div class='links'>
-        <a href='about'>About Us</a>
-        <a href='contact'>Contact Us</a>
-    </div> -->
-
   <img src='../assets/Logos/newFooter.png' class='footlogo'>
 
   <div class='footinfo'>

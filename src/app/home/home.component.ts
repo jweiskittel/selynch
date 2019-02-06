@@ -27,14 +27,14 @@ export class HomeComponent implements OnInit {
 
   menu = () => {
     const dropdown: HTMLElement = document.getElementsByClassName('dropdown')[0] as HTMLElement;
-    if (dropdown.style.visibility === 'hidden') {
+    if (dropdown.style.visibility === 'visible') {
+      dropdown.style.visibility = 'hidden';
+      dropdown.style.opacity = '0';
+    } else {
       dropdown.style.visibility = 'visible';
       dropdown.style.opacity = '1';
       dropdown.style.zIndex = '200';
       dropdown.style.transform = 'translateY(0.2%) translateX(-36%)';
-    } else {
-      dropdown.style.visibility = 'hidden';
-      dropdown.style.opacity = '0';
     }
   }
 

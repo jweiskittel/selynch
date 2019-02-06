@@ -31,7 +31,7 @@
 <div *ngIf='!navbar()'>
   <div class='navbar'>
     <a href='home' class='navbtn'>Home</a>
-    <a class='navbtn dropbtn'>
+    <a class='navbtn dropbtn' (click)='menu()'>
       Services
       <a class='dropdown'>
         <a href='landscapes'>Landscapes</a>
@@ -53,7 +53,7 @@
   </div>
 </div>
 
-<div class="about">
+<div class="about" (click)='nomenu()'>
   <h1 class='heading a'>Who We Are...</h1>
   <p class='aboutp'>S.E. Lynch Landscape Artistry is an award-winning, design-build landscape organization
     offering the very best in design, construction and maintenance. With our numerous years
@@ -63,7 +63,7 @@
   </p>
 </div>
 
-<div class="cover">
+<div class="cover" (click)='nomenu()'>
   <h1 class='heading b'>Our Services</h1>
   <div class="services">
     <div class="design">
@@ -165,11 +165,6 @@
 </div>
 
 <div class='footer'>
-  <!-- <div class='links'>
-        <a href='about'>About Us</a>
-        <a href='contact'>Contact Us</a>
-    </div> -->
-
   <img src='../assets/Logos/newFooter.png' class='footlogo'>
 
   <div class='footinfo'>
