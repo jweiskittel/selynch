@@ -31,7 +31,7 @@
 <div *ngIf='!navbar()'>
         <div class='navbar'>
             <a href='home' class='navbtn'>Home</a>
-            <a class='dropbtn navbtn' (click)='menu()'>
+            <a class='navbtn dropbtn' (click)='menu()'>
                 Services
                 <a class='dropdown'>
                     <a href='landscapes'>Landscapes</a>
@@ -81,7 +81,7 @@
 </div>
 
 <div *ngIf='!display()'>
-    <div class="main" (click)='menu2()'>
+    <div class="main" (click)='nomenu()'>
         <img src='../../assets/Logos/tablogo.png' class='wow slower fadeIn delay-500ms logo'>
         <p class="slogan wow slower fadeIn delay-1s500ms">Your Canvas. Our Artistry.</p>
         <div class="about wow slower fadeIn">
