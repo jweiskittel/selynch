@@ -1,30 +1,57 @@
-<a href='home'><img src='../assets/Logos/SE-Lynch-logo2.png' class='logo2'></a>
-<div class='shadow'></div>
-<div class='navbar'>
-    <div class="navleft">
-        <a href='home' class='navbtn'>Home</a>
-        <a class='dropbtn navbtn'>
-            Services
-            <a class='dropdown'>
-                <a href='landscapes'>Landscapes</a>
-                <hr class='hr'>
-                <a href='hardscapes'>Hardscapes</a>
-                <hr class='hr'>
-                <a href='land-maintenance'>Landscape Maintenance</a>
-                <hr class='hr'>
-                <a href='land-design'>Landscape Design</a>
-                <hr class='hr'>
-                <a href='water-features'>Water Features</a>
-                <hr class='hr'>
-                <a href='wood-structures'>Wood Structures</a>
+<section *ngIf='navbar()'>
+    <a href='home'><img src='../assets/Logos/SE-Lynch-logo2.png' class='logo2'></a>
+    <div class='shadow'></div>
+    <div class='navbar'>
+        <div class="navleft">
+            <a href='home' class='navbtn'>Home</a>
+            <a class='dropbtn navbtn'>
+                Services
+                <a class='dropdown'>
+                    <a href='landscapes'>Landscapes</a>
+                    <hr class='hr'>
+                    <a href='hardscapes'>Hardscapes</a>
+                    <hr class='hr'>
+                    <a href='land-maintenance'>Landscape Maintenance</a>
+                    <hr class='hr'>
+                    <a href='land-design'>Landscape Design</a>
+                    <hr class='hr'>
+                    <a href='water-features'>Water Features</a>
+                    <hr class='hr'>
+                    <a href='wood-structures'>Wood Structures</a>
+                </a>
             </a>
-        </a>
+        </div>
+        <div class="navright">
+            <a href='about' class='navbtn'>About</a>
+            <a href='contact' class='navbtn'>Contact</a>
+        </div>
     </div>
-    <div class="navright">
-        <a href='about' class='navbtn'>About</a>
-        <a href='contact' class='navbtn'>Contact</a>
+</section>
+
+<div *ngIf='!navbar()'>
+        <div class='navbar'>
+            <a href='home' class='navbtn'>Home</a>
+            <a class='navbtn dropbtn'>
+                Services
+                <a class='dropdown'>
+                    <a href='landscapes'>Landscapes</a>
+                    <hr class='hr'>
+                    <a href='hardscapes'>Hardscapes</a>
+                    <hr class='hr'>
+                    <a href='land-maintenance'>Landscape Maintenance</a>
+                    <hr class='hr'>
+                    <a href='land-design'>Landscape Design</a>
+                    <hr class='hr'>
+                    <a href='water-features'>Water Features</a>
+                    <hr class='hr'>
+                    <a href='wood-structures'>Wood Structures</a>
+                </a>
+            </a>
+            <a href='home'><img src='../../assets/Logos/SE-Lynch-logo2.png' class='moblogo'></a>
+            <a href='about' class='navbtn'>About</a>
+            <a href='contact' class='navbtn'>Contact</a>
+        </div>
     </div>
-</div>
 
 <div *ngIf='display()'>
     <div class='main'>

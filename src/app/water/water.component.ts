@@ -22,6 +22,15 @@ export class WaterComponent implements OnInit {
     animateIn: 'fadeIn slow',
     animateOut: 'fadeOut slow'
   };
+
+  navbar = () => {
+    if (window.innerWidth > 1024) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   carousel = () => {
     if (window.innerWidth <= 1024) {
       return true;
@@ -34,9 +43,9 @@ export class WaterComponent implements OnInit {
 
   ngOnInit() {
     if (window.innerWidth > 1024) {
-      const shadow = document.querySelector('div');
-      const img = document.querySelector('img');
       window.addEventListener('scroll', () => {
+        const shadow = document.querySelector('div');
+        const img = document.querySelector('img');
         if (window.scrollY >= 1) {
           shadow.style.height = '3.3vw';
           shadow.style.width = '4vw';

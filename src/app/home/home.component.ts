@@ -9,6 +9,14 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  navbar = () => {
+    if (window.innerWidth > 1024) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   display = () => {
     if (window.innerWidth > 1024) {
       return true;
@@ -19,9 +27,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     if (window.innerWidth > 1024) {
-      const shadow = document.querySelector('div');
-      const img = document.querySelector('img');
       window.addEventListener('scroll', () => {
+        const shadow = document.querySelector('div');
+        const img = document.querySelector('img');
         if (window.scrollY >= 1) {
           shadow.style.height = '3.3vw';
           shadow.style.width = '4vw';
