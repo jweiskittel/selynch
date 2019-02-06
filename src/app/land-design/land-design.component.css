@@ -271,35 +271,36 @@ a {
     }
  
     .main {
-        background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgb(255, 233, 132) 50%, rgba(0,0,0,1) 100%);
-        height: 100%
+        background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgb(212, 193, 109) 50%, rgba(0,0,0,1) 100%);
+        height: 100%;
+        padding-bottom: 10vh
     }
  
     h1 {
         text-align: center;
         font-size: 120px;
-        margin: 5vh 0;
-        text-shadow: -5px 4px 2px black, 18px 18px 44px rgb(255, 233, 132), -18px 18px 44px rgb(255, 233, 132),18px -18px 44px rgb(255, 233, 132), -18px -18px 44px rgb(255, 233, 132), 
-                                       18px 18px 44px rgb(255, 233, 132), -18px 18px 44px rgb(255, 233, 132),18px -18px 44px rgb(255, 233, 132), -18px -18px 44px rgb(255, 233, 132),
-                                       18px 18px 44px rgb(255, 233, 132), -18px 18px 44px rgb(255, 233, 132),18px -18px 44px rgb(255, 233, 132), -18px -18px 44px rgb(255, 233, 132),
-                                       18px 18px 44px rgb(255, 233, 132), -18px 18px 44px rgb(255, 233, 132),18px -18px 44px rgb(255, 233, 132), -18px -18px 44px rgb(255, 233, 132);
+        margin: 10vh auto 15vh auto;
+        text-shadow: -5px 4px 2px black, 
+        18px 18px 44px rgb(255, 233, 132), -18px 18px 44px rgb(255, 233, 132),18px -18px 44px rgb(255, 233, 132), -18px -18px 44px rgb(255, 233, 132), 
+        18px 18px 44px rgb(255, 233, 132), -18px 18px 44px rgb(255, 233, 132),18px -18px 44px rgb(255, 233, 132), -18px -18px 44px rgb(255, 233, 132)
     }
  
     .about {
-        width: 85%;
+        width: 80%;
         margin: auto;
+        padding-bottom: 3vh
     }
  
     p {
         padding-left: 0;
-        font-size: 28px;
+        font-size: 32px;
         text-align: center;
         margin-top: 4vh
     }
  
     ul {
-        font-size: 28px;
-        margin-left: 24vw
+        font-size: 32px;
+        margin-left: 21vw
      }
  
      li:before {
@@ -344,7 +345,8 @@ a {
      }
  
      ul {
-         margin-left: 18vw
+         margin-left: 18vw;
+         font-size: 30px
      }
  
      li:before {
@@ -358,10 +360,41 @@ a {
      h1 {
          font-size: 100px
      }
+
+     p {
+         font-size: 32px
+     }
  }
  
  
  
+ /* Larger Phones */
+
+ @media screen and (max-width: 481px) and (max-height: 854px) {
+    .navbtn {
+        font-size: 18px
+    }
+
+    h1 {
+        font-size: 60px
+    }
+
+    p {
+        font-size: 22px
+    }
+
+    ul {
+        font-size: 20px;
+        margin-left: 14vw
+    }
+
+    .footinfo {
+        font-size: 10px
+    }
+ }
+
+
+
  /* iPhone 6/7/8 Plus */
  @media screen and (max-width: 415px) and (max-height: 737px) {
      .navbtn {
@@ -378,7 +411,7 @@ a {
      
      ul {
          font-size: 17px;
-         margin-left: 11vw
+         margin-left: 14vw
      }
      
      li:before {
@@ -414,13 +447,6 @@ a {
  }
 
 
- /* Larger Phones */
-
- @media screen and (max-width: 481px) and (max-height: 854px) {
-    .navbtn {
-        font-size: 18px
-    }
- }
  
  
  
@@ -430,12 +456,17 @@ a {
         font-size: 16px
     }
 
+    p {
+        font-size: 20px
+    }
+
      ul {
-         margin-left: 10vw
+         font-size: 18px;
+         margin-left: 12vw
      }
  
      h1 {
-         font-size: 55px
+         font-size: 50px
      }
 
      .dropbtn:hover .dropdown {
@@ -457,7 +488,7 @@ a {
  @media screen and (max-width: 412px) and (min-height: 768px) and (max-height: 824px) {
      ul {
          margin-left: 9vw;
-         font-size: 21px
+         font-size: 20px
      }
  
      .navbtn {
@@ -465,7 +496,7 @@ a {
      }
  
      h1 {
-         font-size: 55px
+         font-size: 50px
      }
  
      p {
@@ -495,7 +526,7 @@ a {
      }
  
      p {
-         font-size: 18px
+         font-size: 19px
      }
  
      ul {
@@ -549,7 +580,7 @@ a {
      }
  
      p {
-         font-size: 18px
+         font-size: 19px
      }
  
      ul {

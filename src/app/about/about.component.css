@@ -362,16 +362,19 @@ a {
      }
 
      .b {
-         padding: 6vh
+         padding: 6vh;
+         box-shadow: 2px 2px 8px black
      }
 
      .c {
          font-size: 50px;
-         padding: 6vh
+         padding: 6vh;
+         box-shadow: 2px 2px 8px black, -2px -2px 8px black
      }
 
      .cover {
-         padding: 0 0 15vh 0
+         padding: 0 0 15vh 0;
+         background: white
      }
  }
  

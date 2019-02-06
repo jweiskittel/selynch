@@ -355,12 +355,22 @@ a {
      }
 
      .heading {
-         margin: 15vh 0;
+         margin: 20vh 0;
          padding: 10vh 0
      }
 
      .main {
          margin-bottom: 15vh
+     }
+
+     .heading p {
+         font-size: 30px;
+         width: 75%;
+         margin: auto
+     }
+
+     .heading h1 {
+         font-size: 50px
      }
  }
  
@@ -378,12 +388,45 @@ a {
 
      .heading p {
          width: 80%;
-         margin: auto
+         margin: auto;
+         font-size: 25px
      }
  }
  
+
  
+ /* Larger Phones */
+
+ @media screen and (max-width: 481px) and (max-height: 854px) {
+    .navbtn {
+        font-size: 18px
+    }
+
+    .main {
+        flex-direction: column
+    }
+
+    input, textarea {
+        width: 80vw;
+        margin: auto
+    }
+
+    form {
+        margin: 0vh 0 10vh 0
+    }
+
+    .info {
+        width: 80%;
+        margin: auto
+    }
+
+    .footinfo {
+        font-size: 10px
+    }
+ }
  
+
+
  /* iPhone 6/7/8 Plus */
  @media screen and (max-width: 415px) and (max-height: 737px) {
      .navbtn {
@@ -414,30 +457,11 @@ a {
          height: 1000%
      }
 
-     .main {
-         flex-direction: column
-     }
-
-     input, textarea {
-         width: 80vw;
-         margin: auto
-     }
-
-     form {
-         margin: 0vh 0 10vh 0
+     .heading p {
+         font-size: 22px
      }
  }
 
-
-
- /* Larger Phones */
-
- @media screen and (max-width: 481px) and (max-height: 854px) {
-    .navbtn {
-        font-size: 18px
-    }
- }
- 
  
 
  /* Pixel 2 */
@@ -471,18 +495,9 @@ a {
          font-size: 9px
      }
 
-     .main {
-        flex-direction: column
-    }
-
-    input, textarea {
-        width: 80vw;
-        margin: auto
-    }
-
-    form {
-        margin: 0vh 0 10vh 0
-    }
+     .heading p {
+         font-size: 22px
+     }
  }
  
  
@@ -515,6 +530,14 @@ a {
      .dropdown {
          height: 1000%
      }
+
+     .heading p {
+         font-size: 20px
+     }
+
+     .heading h1 {
+         font-size: 40px
+     }
  }
  
  
@@ -535,6 +558,10 @@ a {
      .heading p {
          font-size: 20px
      }
+
+     .heading h1 {
+         font-size: 40px
+     }
  }
  
  
@@ -551,6 +578,10 @@ a {
 
      .heading p {
          font-size: 18px
+     }
+
+     .heading h1 {
+         font-size: 40px
      }
  }
  
