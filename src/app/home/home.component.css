@@ -426,12 +426,6 @@ a {
 
 /* iPad Pro  */
 @media screen and (max-width: 1024px) and (max-height: 1367px) {
-     .logo2 {
-        width: 10vw;
-        background: transparent;
-        margin-left: -5vw
-    }
-
      .moblogo {
          height: 6vh;
          margin-bottom: 0.5vh
@@ -459,19 +453,21 @@ a {
      }
 
      .logo {
-        margin: 18vh auto 5vh auto;
+        margin: 10vh auto 5vh auto;
         display: block;
         width: 65%
     }
 
     .main {
-        height: 580vh;
-        padding-top: 6vh
+        height: 100%;
+        background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgb(143, 8, 8) 50%, rgba(0,0,0,1) 100%)
     }
 
     .slogan {
         font-size: 60px;
-        text-align: center
+        text-align: center;
+        text-shadow: -5px 3px 2px black, 
+        12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29)
     }
 
     .about {
@@ -492,9 +488,8 @@ a {
         font-family: 'Anton';
         margin: 25vh 0;
         color: white;
-        text-shadow: -5px 3px 2px black, 12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29), 
-                                       12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29),
-                                       12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29);
+        text-shadow: -5px 3px 2px black, 
+        12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29)
         
     }
 
@@ -503,9 +498,9 @@ a {
         font-size: 70px;
         font-family: 'Marcellus SC';
         color: white;
-        text-shadow: -5px 3px 2px black, 12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29), 
-                                       12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29),
-                                       12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29);
+        text-shadow: -5px 3px 2px black, 
+        12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29), 
+        12px 12px 44px rgb(253, 29, 29), -12px 12px 44px rgb(253, 29, 29),12px -12px 44px rgb(253, 29, 29), -12px -12px 44px rgb(253, 29, 29)
     }
 
     .services {
@@ -531,7 +526,7 @@ a {
 
      .logo{
          width: 80%;
-         margin-top: 12vh
+         margin-top: 4vh
      }
 
      .about {
@@ -544,10 +539,6 @@ a {
 
      h2 {
          font-size: 60px
-     }
-
-     .main {
-         height: 600vh
      }
  }
  
@@ -565,11 +556,6 @@ a {
      
      .footer {
          padding-top: 1.3vh
-     }
-     
-     .logo2 {
-         width: 11vw;
-         margin-left: -5.5vw
      }
  
      .dropbtn:hover .dropdown {
@@ -593,7 +579,7 @@ a {
      }
 
      .logo {
-         margin-top: 18vh
+         margin-top: 10vh
      }
 
      .about {
@@ -609,10 +595,6 @@ a {
      h2 {
          font-size: 34px
      }
-
-     .main {
-         height: 535vh;
-     }
  }
 
 
@@ -624,33 +606,27 @@ a {
     }
     
     .footinfo {
-        font-size: 8px
-    }
-
-    .logo2 {
-        width: 13vw;
-        margin-left: -6.5vw
+        font-size: 10px
     }
 
     .slogan {
-        font-size: 30px
+        font-size: 35px
     }
 
     .about {
-        font-size: 18px
+        font-size: 22px
     }
 
     h1 {
-        font-size: 38px
+        font-size: 45px
     }
 
     h2 {
-        font-size: 28px
+        font-size: 32px
     }
 
-    .main {
-        height: 100%;
-        background-image: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgb(143, 8, 8) 50%, rgba(0,0,0,1) 100%);
+    .logo {
+        margin-top: 10vh
     }
  }
 
@@ -658,11 +634,6 @@ a {
 
  /* Pixel 2 */
  @media screen and (max-width: 413px) and (max-height: 767px) {
-     .logo2 {
-         width: 13.5vw;
-         margin-left: -6.75vw
-     }
-
      .dropbtn:hover .dropdown {
         transform: translateY(-0.5%) translateX(-36%);
      }
@@ -675,9 +646,8 @@ a {
         width: 35%
      }
 
-     .main {
-         height: 100%;
-        background-image: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgb(143, 8, 8) 50%, rgba(0,0,0,1) 100%)
+     .logo {
+         margin-top: 10vh
      }
 
      h1 {
@@ -708,14 +678,9 @@ a {
  
  
  /* Pixel 2 XL */
- @media screen and (max-width: 412px) and (max-height: 824px) {
+ @media screen and (max-width: 412px) and (min-height: 768px) and (max-height: 824px) {
      .navbtn {
          font-size: 17px
-     }
- 
-     .logo2 {
-         width: 15vw;
-         margin-left: -7.5vw
      }
  
      .footinfo {
@@ -723,29 +688,25 @@ a {
      }
 
      .slogan {
-         font-size: 35px
+         font-size: 32px
      }
 
      .logo {
-         margin-top: 20vh
+         margin-top: 10vh
      }
 
      .about {
          margin-top: 35vh;
-         font-size: 22px;
+         font-size: 21px;
          text-shadow: -2px 2px 2px rgb(66, 66, 66);
      }
 
      h1 {
-         font-size: 50px
+         font-size: 40px
      }
 
      h2 {
          font-size: 33px
-     }
-
-     .main {
-         height: 505vh
      }
  }
  
@@ -758,11 +719,6 @@ a {
  @media screen and (max-width: 376px) and (max-height: 813px) and (min-height: 812px) {
     .navbtn {
          font-size: 15px
-     }
- 
-     .logo2 {
-         width: 13vw;
-         margin-left: -6.5vw
      }
  
      .footinfo {
@@ -795,10 +751,6 @@ a {
 
     h2 {
         font-size: 30px
-    }
-
-    .main {
-        height: 490vh
     }
  }
  
@@ -845,14 +797,9 @@ a {
      .footinfo {
          font-size: 8px
      }
- 
-     .logo2 {
-         width: 13vw;
-         margin-left: -6.5vw
-     }
 
      .slogan {
-         font-size: 30px
+         font-size: 28px
      }
 
      .about {
@@ -860,15 +807,11 @@ a {
      }
 
      h1 {
-         font-size: 38px
+         font-size: 35px
      }
 
      h2 {
-         font-size: 28px
-     }
-
-     .main {
-         height: 530vh
+         font-size: 26px
      }
  }
  
@@ -880,17 +823,12 @@ a {
          font-size: 12px
      }
  
-     .logo2 {
-         width: 13.5vw;
-         margin-left: -6.25vw
-     }
- 
      .footinfo {
          font-size: 7px
      }
 
      .slogan {
-         font-size: 26px
+         font-size: 24px
      }
 
      .about {
@@ -903,10 +841,6 @@ a {
 
      h2 {
          font-size: 26px
-     }
-
-     .main {
-         height: 535vh
      }
  }
 

@@ -288,10 +288,10 @@ a {
        text-align: center;
        font-size: 100px;
        margin: 5vh 0;
-       text-shadow: -5px 3px 2px black, 18px 18px 44px rgb(13, 70, 134), -18px 18px 44px rgb(13, 70, 134),18px -18px 44px rgb(13, 70, 134), -18px -18px 44px rgb(13, 70, 134), 
-       18px 18px 44px rgb(13, 70, 134), -18px 18px 44px rgb(13, 70, 134),18px -18px 44px rgb(13, 70, 134), -18px -18px 44px rgb(13, 70, 134),
-       18px 18px 44px rgb(13, 70, 134), -18px 18px 44px rgb(13, 70, 134),18px -18px 44px rgb(13, 70, 134), -18px -18px 44px rgb(13, 70, 134),
-       18px 18px 44px rgb(13, 70, 134), -18px 18px 44px rgb(13, 70, 134),18px -18px 44px rgb(13, 70, 134), -18px -18px 44px rgb(13, 70, 134);
+       text-shadow: -5px 3px 2px black, 18px 18px 44px rgb(25, 88, 161), -18px 18px 44px rgb(25, 88, 161),18px -18px 44px rgb(25, 88, 161), -18px -18px 44px rgb(25, 88, 161), 
+       18px 18px 44px rgb(25, 88, 161), -18px 18px 44px rgb(25, 88, 161),18px -18px 44px rgb(25, 88, 161), -18px -18px 44px rgb(25, 88, 161),
+       18px 18px 44px rgb(25, 88, 161), -18px 18px 44px rgb(25, 88, 161),18px -18px 44px rgb(25, 88, 161), -18px -18px 44px rgb(25, 88, 161),
+       18px 18px 44px rgb(25, 88, 161), -18px 18px 44px rgb(25, 88, 161),18px -18px 44px rgb(25, 88, 161), -18px -18px 44px rgb(25, 88, 161);
    }
 
    .about {
@@ -343,10 +343,6 @@ a {
 
 /* iPad */
 @media screen and (max-width: 768px) and (max-height: 1025px) {
-    .main {
-        height: 170vh
-    }
-
     .navbtn {
         font-size: 22px
     }
@@ -368,9 +364,6 @@ a {
 
 /* iPhone 6/7/8 Plus */
 @media screen and (max-width: 415px) and (max-height: 737px) {
-    .main {
-        height: 160vh
-    }
     .navbtn {
         font-size: 15px
     }
@@ -439,10 +432,6 @@ a {
     ul {
         margin-left: 10vw
     }
-    
-    .main {
-        height: 170vh
-    }
 
     .logo {
         width: 13.5vw;
@@ -473,10 +462,6 @@ a {
     ul {
         margin-left: 9vw;
         font-size: 21px
-    }
-    
-    .main {
-        height: 165vh
     }
 
     .navbtn {
@@ -544,10 +529,6 @@ a {
 
     .footinfo {
         font-size: 8px
-    }
-
-    .main {
-        height: 165vh
     }
 
     .dropbtn:hover .dropdown {
