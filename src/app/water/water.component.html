@@ -31,7 +31,7 @@
 <div *ngIf='!navbar()'>
     <div class='navbar'>
         <a href='home' class='navbtn'>Home</a>
-        <a class='navbtn dropbtn'>
+        <a class='navbtn dropbtn' (click)='menu()'>
             Services
             <a class='dropdown'>
                 <a href='landscapes'>Landscapes</a>
@@ -53,7 +53,7 @@
     </div>
 </div>
 
-<div class='main'>
+<div class='main' (click)='nomenu()'>
     <h1>Water Features</h1>
     <p class='about'>S.E. Lynch Landscape Artistry has been building custom water features from the company's
         inception. Water in the landscape draws the visitor in for a closer look and becomes the focal point of the
@@ -85,11 +85,6 @@
 
 
 <div class='footer'>
-    <!-- <div class='links'>
-            <a href='about'>About Us</a>
-            <a href='contact'>Contact Us</a>
-        </div> -->
-
     <img src='../assets/Logos/newFooter.png' class='footlogo'>
 
     <div class='footinfo'>

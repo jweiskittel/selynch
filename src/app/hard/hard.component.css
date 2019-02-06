@@ -17,10 +17,10 @@ h1 {
     font-family: 'Dancing Script';
     color: white;
     margin: 4vh 2.5vw;
-    text-shadow: -5px 4px 2px black, 18px 18px 44px rgb(53, 53, 53), -18px 18px 44px rgb(53, 53, 53),18px -18px 44px rgb(53, 53, 53), -18px -18px 44px rgb(53, 53, 53), 
-                                       18px 18px 44px rgb(53, 53, 53), -18px 18px 44px rgb(53, 53, 53),18px -18px 44px rgb(53, 53, 53), -18px -18px 44px rgb(53, 53, 53),
-                                       18px 18px 44px rgb(53, 53, 53), -18px 18px 44px rgb(53, 53, 53),18px -18px 44px rgb(53, 53, 53), -18px -18px 44px rgb(53, 53, 53),
-                                       18px 18px 44px rgb(53, 53, 53), -18px 18px 44px rgb(53, 53, 53),18px -18px 44px rgb(53, 53, 53), -18px -18px 44px rgb(53, 53, 53);
+    text-shadow: -5px 4px 2px black, 18px 18px 44px #7e6028, -18px 18px 44px #7e6028,18px -18px 44px #7e6028, -18px -18px 44px #7e6028, 
+    18px 18px 44px #7e6028, -18px 18px 44px #7e6028,18px -18px 44px #7e6028, -18px -18px 44px #7e6028,
+    18px 18px 44px #7e6028, -18px 18px 44px #7e6028,18px -18px 44px #7e6028, -18px -18px 44px #7e6028,
+    18px 18px 44px #7e6028, -18px 18px 44px #7e6028,18px -18px 44px #7e6028, -18px -18px 44px #7e6028;
 }
 
 p {

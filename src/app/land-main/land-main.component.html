@@ -31,7 +31,7 @@
 <div *ngIf='!navbar()'>
     <div class='navbar'>
         <a href='home' class='navbtn'>Home</a>
-        <a class='navbtn dropbtn'>
+        <a class='navbtn dropbtn' (click)='menu()'>
             Services
             <a class='dropdown'>
                 <a href='landscapes'>Landscapes</a>
@@ -53,7 +53,7 @@
     </div>
 </div>
 
-<div class='main'>
+<div class='main' (click)='nomenu()'>
     <h1>Landscape Maintenance</h1>
     <p class='about'>Behind every great looking landscape is an equally viable maintenance program.
         S.E. Lynch Landscape Artistry can tailor a customized landscape maintenance program to fit your home or
@@ -88,11 +88,6 @@
 </div>
 
 <div class='footer'>
-    <!-- <div class='links'>
-            <a href='about'>About Us</a>
-            <a href='contact'>Contact Us</a>
-        </div> -->
-
     <img src='../assets/Logos/newFooter.png' class='footlogo'>
 
     <div class='footinfo'>

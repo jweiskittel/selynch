@@ -280,15 +280,18 @@ a {
    }
 
    .main {
-       background-size: cover;
-       background-position-x: 15%;
-       height: 155vh
+       background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgb(25, 91, 144) 50%, rgba(0,0,0,1) 100%);
+       height: 100%
    }
 
    h1 {
        text-align: center;
        font-size: 100px;
-       margin: 5vh 0 
+       margin: 5vh 0;
+       text-shadow: -5px 3px 2px black, 18px 18px 44px rgb(13, 70, 134), -18px 18px 44px rgb(13, 70, 134),18px -18px 44px rgb(13, 70, 134), -18px -18px 44px rgb(13, 70, 134), 
+       18px 18px 44px rgb(13, 70, 134), -18px 18px 44px rgb(13, 70, 134),18px -18px 44px rgb(13, 70, 134), -18px -18px 44px rgb(13, 70, 134),
+       18px 18px 44px rgb(13, 70, 134), -18px 18px 44px rgb(13, 70, 134),18px -18px 44px rgb(13, 70, 134), -18px -18px 44px rgb(13, 70, 134),
+       18px 18px 44px rgb(13, 70, 134), -18px 18px 44px rgb(13, 70, 134),18px -18px 44px rgb(13, 70, 134), -18px -18px 44px rgb(13, 70, 134);
    }
 
    .about {
