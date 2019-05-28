@@ -1,6 +1,6 @@
 .about {
     width: 100%;
-    padding: 25vh;
+    padding: 35vh 25vh 25vh 25vh;
     background: url('../../assets/aboutBack2.jpg');
     background-size: cover;
     background-position: center;

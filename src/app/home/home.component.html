@@ -1,57 +1,57 @@
 <section *ngIf='navbar()'>
-    <a href='home'><img src='../assets/Logos/SE-Lynch-logo2.png' class='logo2'></a>
+    <a routerLink='/home'><img src='../assets/Logos/SE-Lynch-logo2.png' class='logo2'></a>
     <div class='shadow'></div>
     <div class='navbar'>
         <div class="navleft">
-            <a href='home' class='navbtn'>Home</a>
+            <a routerLink='/home' class='navbtn'>Home</a>
             <a class='dropbtn navbtn'>
                 Services
                 <a class='dropdown'>
-                    <a href='landscapes'>Landscapes</a>
+                    <a routerLink='/landscapes'>Landscapes</a>
                     <hr class='hr'>
-                    <a href='hardscapes'>Hardscapes</a>
+                    <a routerLink='/hardscapes'>Hardscapes</a>
                     <hr class='hr'>
-                    <a href='land-maintenance'>Landscape Maintenance</a>
+                    <a routerLink='/land-maintenance'>Landscape Maintenance</a>
                     <hr class='hr'>
-                    <a href='land-design'>Landscape Design</a>
+                    <a routerLink='/land-design'>Landscape Design</a>
                     <hr class='hr'>
-                    <a href='water-features'>Water Features</a>
+                    <a routerLink='/water-features'>Water Features</a>
                     <hr class='hr'>
-                    <a href='wood-structures'>Wood Structures</a>
+                    <a routerLink='/wood-structures'>Wood Structures</a>
                 </a>
             </a>
         </div>
         <div class="navright">
-            <a href='about' class='navbtn'>About</a>
-            <a href='contact' class='navbtn'>Contact</a>
+            <a routerLink='/about' class='navbtn'>About</a>
+            <a routerLink='/contact' class='navbtn'>Contact</a>
         </div>
     </div>
 </section>
 
 <div *ngIf='!navbar()'>
-        <div class='navbar'>
-            <a href='home' class='navbtn'>Home</a>
-            <a class='navbtn dropbtn' (click)='menu()'>
-                Services
-                <a class='dropdown'>
-                    <a href='landscapes'>Landscapes</a>
-                    <hr class='hr'>
-                    <a href='hardscapes'>Hardscapes</a>
-                    <hr class='hr'>
-                    <a href='land-maintenance'>Landscape Maintenance</a>
-                    <hr class='hr'>
-                    <a href='land-design'>Landscape Design</a>
-                    <hr class='hr'>
-                    <a href='water-features'>Water Features</a>
-                    <hr class='hr'>
-                    <a href='wood-structures'>Wood Structures</a>
-                </a>
+    <div class='navbar'>
+        <a routerLink='/home' class='navbtn'>Home</a>
+        <a class='navbtn dropbtn' (click)='menu()'>
+            Services
+            <a class='dropdown'>
+                <a routerLink='/landscapes'>Landscapes</a>
+                <hr class='hr'>
+                <a routerLink='/hardscapes'>Hardscapes</a>
+                <hr class='hr'>
+                <a routerLink='/land-maintenance'>Landscape Maintenance</a>
+                <hr class='hr'>
+                <a routerLink='/land-design'>Landscape Design</a>
+                <hr class='hr'>
+                <a routerLink='/water-features'>Water Features</a>
+                <hr class='hr'>
+                <a routerLink='/wood-structures'>Wood Structures</a>
             </a>
-            <a href='home'><img src='../../assets/Logos/SE-Lynch-logo2.png' class='moblogo'></a>
-            <a href='about' class='navbtn'>About</a>
-            <a href='contact' class='navbtn'>Contact</a>
-        </div>
+        </a>
+        <a routerLink='/home'><img src='../../assets/Logos/SE-Lynch-logo2.png' class='moblogo'></a>
+        <a routerLink='/about' class='navbtn'>About</a>
+        <a routerLink='/contact' class='navbtn'>Contact</a>
     </div>
+</div>
 
 <div *ngIf='display()'>
     <div class='main'>
@@ -96,32 +96,44 @@
             <h1>Our Services</h1>
 
             <div class='services'>
-                <a href='landscapes'><h2>Landscapes</h2></a>
+                <a href='landscapes'>
+                    <h2>Landscapes</h2>
+                </a>
                 <a href='landscapes'><img src='../../assets/Landscapes/pic2.png' class='picture'></a>
             </div>
 
             <div class='services'>
-                <a href='hardscapes'><h2>Hardscapes</h2></a>
+                <a href='hardscapes'>
+                    <h2>Hardscapes</h2>
+                </a>
                 <a href='hardscapes'><img src='../../assets/Hardscapes/pic2.png' class='picture'></a>
             </div>
 
             <div class='services'>
-                <a href='land-maintenance'><h2>Landscape Maintenance</h2></a>
+                <a href='land-maintenance'>
+                    <h2>Landscape Maintenance</h2>
+                </a>
                 <a href='land-maintenance'><img src='../../assets/Maintenance/pic1.png' class='picture'></a>
             </div>
 
             <div class='services'>
-                <a href='land-design'><h2>Landscape Design</h2></a>
+                <a href='land-design'>
+                    <h2>Landscape Design</h2>
+                </a>
                 <a href='land-design'><img src='../../assets/Design/pic2.png' class='picture'></a>
             </div>
 
             <div class='services'>
-                <a href='water-features'><h2>Water Features</h2></a>
+                <a href='water-features'>
+                    <h2>Water Features</h2>
+                </a>
                 <a href='water-features'><img src='../../assets/Water/pic3.png' class='picture'></a>
             </div>
 
             <div class='services'>
-                <a href='wood-structures'><h2>Wood Structures</h2></a>
+                <a href='wood-structures'>
+                    <h2>Wood Structures</h2>
+                </a>
                 <a href='wood-structures'><img src='../../assets/Wood/pic3.png' class='picture'></a>
             </div>
 
@@ -135,7 +147,7 @@
     <div class='footinfo'>
         <span>&copy; 2018 S.E. Lynch Landscape Artistry</span>
         <span class='spacer'>|</span>
-        <a class='link' href='https://jweiskittel.github.io'>Developed and Maintained by <img src='../assets/Logos/JWLogoBlack.png'
-                class='jwlogo'> Development</a>
+        <a class='link' href='https://jweiskittel.github.io'>Developed and Maintained by <img
+                src='../assets/Logos/JWLogoBlack.png' class='jwlogo'> Development</a>
     </div>
 </div>
